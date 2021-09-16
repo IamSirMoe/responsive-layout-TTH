@@ -37,7 +37,9 @@ a {
   margin: 0 auto;
   line-height: 1.2;
   font-size: 1.2rem;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 p {
   font-weight: normal;
@@ -50,7 +52,7 @@ p {
 }
 
 .portfolio-img {
-  max-width: 95%;
+  max-width: 90%;
   padding-top: 40px;
 }
 .portfolio-text {
@@ -73,6 +75,8 @@ a:hover {
 }
 .email {
   text-decoration: none;
+  padding-bottom: 40px;
+  border-bottom: 2px solid lightgray;
 }
 .email a {
   text-decoration: none;
@@ -80,6 +84,13 @@ a:hover {
 strong {
   color: darkgray;
   font-weight: bold;
+}
+.bottom-name {
+  float: left;
+}
+.back-to-top {
+  text-transform: uppercase;
+  float: right;
 }
 
 @media screen and (min-width: 768px) {
@@ -131,11 +142,11 @@ strong {
   .bottom-nav {
     display: flex;
     flex-direction: row;
-    border-top: 1px solid lightgray;
-    padding-top: 25px;
+    float: right;
   }
   .bottom-name {
-    margin-right: 300px;
+    font-weight: bold;
+    color: black;
   }
 
   .bottom-nav-container {
@@ -156,9 +167,9 @@ strong {
     margin: 0 auto;
     padding-bottom: 40px;
   }
-  .bottom-name {
-    font-weight: bold;
-    color: darkgray;
+
+  .back-to-top {
+    display: none;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -216,7 +227,9 @@ strong {
   }
   .bottom-nav-item {
     float: right;
+    display: inline-flex;
     font-weight: bold;
     color: black;
+    margin-top: 0;
   }
 }
