@@ -1,27 +1,32 @@
 * {
   font-family: 'Glory', sans-serif;
   box-sizing: border-box;
-  margin-top: 0;
-  margin-left: 0;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
   text-align: center;
 }
 header {
   background-color: rgb(241, 241, 241);
 }
 .top-name {
-  padding-top: 2rem;
+  padding: 1rem 0 1rem 0;
 }
 .top-nav {
   text-transform: uppercase;
-  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
   margin: 0 auto;
 }
-li {
-  border: 10px solid rgb(241, 241, 241);
-  list-style: none;
-  height: 3rem;
+.top-nav-item {
+  border: 1px solid rgb(241, 241, 241);
+  margin-bottom: 5px;
   background-color: white;
+  font-weight: bold;
+}
+.top-nav li {
+  list-style-type: none;
+  line-height: 50px;
 }
 a {
   text-decoration: none;
@@ -29,216 +34,155 @@ a {
 }
 .profile-img {
   padding-top: 20px;
+  max-width: 100%;
 }
-.aboutme {
-  background-color: rgb(241, 241, 241);
-}
-#background {
-  background-color: rgb(241, 241, 241);
-}
-
 .aboutme-text {
   color: grey;
-  margin: 0 auto;
-  line-height: 1.2;
-  font-size: 1.2rem;
-  padding-bottom: 40px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-p {
-  font-weight: normal;
-  margin-bottom: 30px;
+  font-size: 1.5rem;
+  padding: 1rem 1rem 2rem 1rem;
 }
 
 .portfolio-title {
-  text-align: center;
-  padding-top: 40px;
+  padding: 1.8rem;
 }
 
 .portfolio-img {
   max-width: 90%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 1rem 0 1rem 0;
 }
 .portfolio-text {
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 1.2rem;
-  font-size: 1.3rem;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 footer {
   background-color: rgb(241, 241, 241);
+  padding-top: 2.5rem;
+  margin-top: 3.5rem;
+}
+#contactLink {
   padding: 2rem;
 }
-a,
-a:visited,
-a:hover {
-  text-decoration: none;
+.contact-text {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
 }
-.bottom-nav {
-  display: none;
-}
+
 .email {
   text-decoration: none;
   padding-bottom: 40px;
+  padding-top: 1rem;
   border-bottom: 2px solid lightgray;
-}
-.email a {
-  text-decoration: none;
 }
 strong {
   color: darkgray;
   font-weight: bold;
 }
-.bottom-name {
-  float: left;
+.bottom-nav-container {
+  display: none;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 .back-to-top {
   text-transform: uppercase;
-  float: right;
 }
 
 @media screen and (min-width: 768px) {
-  .top-nav-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-  .top-nav-container li {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
-    padding: 20px;
+  .top-nav-item {
+    display: inline-flex;
+    display: space-between;
     background-color: rgb(241, 241, 241);
+    font-weight: bold;
+    padding: 0 1rem 2rem 1rem;
   }
-
   .aboutme {
     display: flex;
     flex-direction: row-reverse;
-    padding-bottom: 3rem;
+    padding-bottom: 50px;
   }
 
   .aboutme-text {
-    margin-top: 4rem;
-    width: 60%;
-    font-size: 1.8rem;
     text-align: left;
+    font-size: 1.5rem;
   }
   .profile-img {
-    width: 300px;
-    height: 80%;
-    padding-top: 6%;
+    width: 320px;
   }
   .portfolio-container {
     display: flex;
-    flex-direction: row;
-    margin: 10px 0px 30px;
-    display: inline-flex;
     flex-wrap: wrap;
+    padding-top: 1.1rem;
   }
   .main-item {
-    flex-grow: 1;
-    text-align: center;
     max-width: 50%;
-    justify-content: stretch;
-  }
-  .bottom-nav {
-    display: flex;
-    flex-direction: row;
-    float: right;
-  }
-  .bottom-name {
-    font-weight: bold;
-    color: black;
-  }
-
-  .bottom-nav-container {
-    display: flex;
-    flex-direction: row;
-    margin: -15px;
-  }
-  .bottom-nav-item {
-    display: inline-flex;
-    flex-direction: row;
-    float: right;
-
-    text-transform: uppercase;
-    background-color: rgb(241, 241, 241);
-    color: black;
-    font-weight: bold;
-  }
-
-  .contact-text {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 40px;
   }
 
   .back-to-top {
     display: none;
   }
-}
-@media screen and (min-width: 1024px) {
-  .top-name {
-    display: flex;
-    flex-direction: row;
-    padding-left: 3rem;
-  }
-  .top-nav-container {
-    display: flex;
-    flex-direction: row;
-    width: 33%;
-    float: right;
-    margin-top: -60px;
-  }
-  .top-nav-container li {
-    float: right;
-  }
-
-  .aboutme-text {
-    margin-top: 1.5rem;
-    margin-left: 1.2rem;
-    width: 68%;
-    font-size: 1.5rem;
-  }
-  .profile-img {
-    position: relative;
-    top: -40px;
-  }
-
-  .portfolio-container {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 0px 30px;
-    display: inline-flex;
-    flex-wrap: wrap;
-  }
-  .main-item {
-    flex-grow: 1;
-    text-align: center;
-    max-width: 33%;
-    justify-content: stretch;
-  }
   .bottom-nav {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
   }
   .bottom-name {
-    font-weight: bold;
-    color: black;
+    margin: 10px;
   }
+
   .bottom-nav-container {
     display: flex;
-    padding-left: 14rem;
+    justify-self: flex-end;
   }
   .bottom-nav-item {
-    float: right;
-    display: inline-flex;
     font-weight: bold;
-    color: black;
+    margin: 10px;
+    text-transform: uppercase;
+  }
+
+  .bottom-nav-container li {
+    list-style-type: none;
+  }
+  #contactLink {
+    padding: 2rem 0 2rem 0;
+  }
+  .contact-text {
+    font-size: 1.5rem;
+    color: gray;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .inline {
+    width: 100%;
+    display: flex;
+    justify-items: space-between;
+  }
+  .top-nav {
+    padding: 5px 0 0 500px;
+  }
+  #HomeLink {
+    padding-left: 25px;
+  }
+
+  .top-nav-item a {
+    color: rgb(80, 77, 77);
+  }
+  .portfolio-container {
+    display: flex;
+  }
+  .main-item {
+    max-width: 33%;
+  }
+  .contact-text {
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2.5rem;
   }
 }
