@@ -96,7 +96,6 @@ strong {
 @media screen and (min-width: 768px) {
   .top-nav-item {
     display: inline-flex;
-    display: space-between;
     background-color: rgb(241, 241, 241);
     font-weight: bold;
     padding: 0 1rem 2rem 1rem;
@@ -162,7 +161,6 @@ strong {
   .inline {
     width: 100%;
     display: flex;
-    justify-items: space-between;
   }
   .top-nav {
     padding: 5px 0 0 500px;
